@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+</head>
+<body>
+    <div id="charts">
+        <canvas id="submissionChart"></canvas>
+        <canvas id="interviewChart"></canvas>
+        <!-- Add more canvases for other charts -->
+    </div>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th onclick="sortTable(0)">Marketing Person</th>
+                <th onclick="sortTable(1)">Candidate Name</th>
+                <th>Vendor Company</th>
+                <th>Client</th>
+                <th>Status</th>
+                <th>Interview1</th>
+                <th>Interview2</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
